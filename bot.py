@@ -13,8 +13,38 @@ FEEDS = [
     "https://www.aljazeera.com/xml/rss/all.xml",
     "https://www.theguardian.com/world/rss",
 ]
-KEYWORDS = ["iran", "tehran", "iranian", "khamenei", "irgc",
-            "hormuz", "persian gulf"]
+KEYWORDS = [
+    # ایران و مکان‌ها
+    "iran", "iranian", "tehran", "persian gulf", "hormuz",
+    "strait of hormuz", "isfahan", "natanz", "fordow", "bushehr",
+    # رهبران و نهادها
+    "khamenei", "pezeshkian", "araghchi", "irgc", "revolutionary guard",
+    # مذاکرات و برنامه هسته‌ای
+    "nuclear talks", "nuclear deal", "nuclear program", "enrichment",
+    "uranium", "iaea", "jcpoa", "snapback", "sanctions on iran",
+    "islamabad", "memorandum of understanding",
+    # میانجی‌ها
+    "qatar mediat", "pakistan mediat", "egypt mediat", "oman mediat",
+    "witkoff", "vance",
+    # ترامپ و ایران
+    "trump iran", "trump on iran", "trump tehran",
+    "trump said iran", "trump warns iran", "trump threatens iran",
+    "blockade", "naval blockade",
+    # پست و توییت سیاستمداران
+    "truth social", "posted on truth social", "said on x",
+    "wrote on x", "posted on x", "tweeted", "social media post",
+]
+
+# سیاستمدارها و رهبران مهم
+LEADERS = [
+    "trump", "netanyahu", "macron", "starmer", "merz", "biden",
+    "putin", "zelensky", "erdogan", "xi jinping", "modi",
+    "rubio", "hegseth", "guterres", "von der leyen",
+    "mbs", "bin salman", "sisi", "sharif",
+]
+
+IRAN_WORDS = ["iran", "tehran", "nuclear", "enrichment", "hormuz",
+              "ayatollah", "irgc", "sanctions"]
 SIGNATURE = "\n\n🤖 من ربات خبریاب ایران کهنم و این خبر مستقیم از سایت مربوطه براتون آوردم"
 SEEN_FILE = "seen.json"
 MODEL = "claude-haiku-4-5-20251001"
