@@ -59,7 +59,12 @@ def save_seen(seen):
 
 def is_iran_related(title, summary):
     text = (title + " " + summary).lower()
-    return any(k in text for k in KEYWORDS)
+    if any(k in text for k in KEYWORDS):
+        return True
+    # هر سیاستمدار مهم + کلمات مرتبط با ایران
+    if any(l in text for l in LEADERS) and any(w in text for w in IRAN_WORDS):
+        return True
+    return False
 
 def translate(title, summary):
     prompt = (
